@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+<head>
+    <meta charset="UTF-8">
+    <title>博客系统</title>
+    <!--webjars引用-因为locationer 所以不带版本号-->
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div>
+    <!--authorize：认证，授权-->
+    <div sec:authorize="isAuthenticated()">
+        <p>登录的用户名为：<span sec:authentication="name"></span></p>
+        <p>登录的权限为：<span sec:authentication="principal.authorities"></span></p>
+    </div>
+</div>
+<div class="container"><br/>
+    <div class="alert alert-success">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <h3>index首页</h3>Hello, <strong>springboot and bootstrap！！！</strong>
+    </div>
+</div>
+</body>
+</html>

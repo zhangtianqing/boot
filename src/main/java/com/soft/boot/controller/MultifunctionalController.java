@@ -25,7 +25,7 @@ public class MultifunctionalController {
 
     @RequestMapping("/index")
     public String index(){
-        return "index";
+        return "default_index";
     }
 
 }
