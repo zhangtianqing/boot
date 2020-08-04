@@ -82,7 +82,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     private void InControl(HttpSecurity http) throws Exception {
         http.authorizeRequests()       //配置安全策略
-                .antMatchers("/css/**", "/images/**", "/js/**", "/plugin/**").permitAll()
+                .antMatchers("/css/**", "/images/**", "/js/**", "/plugin/**","/webjars/**").permitAll()
                 .withObjectPostProcessor(new ObjectPostProcessor<FilterSecurityInterceptor>() {
                     @Override
                     public <O extends FilterSecurityInterceptor> O postProcess(O o) {

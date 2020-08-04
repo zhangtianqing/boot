@@ -936,3 +936,159 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x02
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
 
+2020-08-04 17:58:08.080  INFO 6004 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 6004 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 17:58:08.081  INFO 6004 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 17:58:08.109  INFO 6004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 17:58:08.109  INFO 6004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 17:58:08.896  INFO 6004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-04 17:58:08.901  INFO 6004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-04 17:58:08.902  INFO 6004 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 17:58:08.953  INFO 6004 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-04 17:58:08.953  INFO 6004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 844 ms
+2020-08-04 17:58:09.331  INFO 6004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-08-04 17:58:09.331  INFO 6004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/noAuthenticate'], []
+2020-08-04 17:58:09.352  INFO 6004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fdafc10, org.springframework.security.web.context.SecurityContextPersistenceFilter@2819fdb8, org.springframework.security.web.header.HeaderWriterFilter@5d7b9388, org.springframework.security.web.authentication.logout.LogoutFilter@2a006215, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1fa2e351, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@34a29cd8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@364cfc8d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2065e23c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d8a00c, org.springframework.security.web.session.SessionManagementFilter@2351918c, org.springframework.security.web.access.ExceptionTranslationFilter@11717130, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6dceed19]
+2020-08-04 17:58:09.418  INFO 6004 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 17:58:09.456  INFO 6004 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-04 17:58:09.489  WARN 6004 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-04 17:58:09.561  INFO 6004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-04 17:58:09.585  INFO 6004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-04 17:58:09.592  INFO 6004 --- [restartedMain] com.soft.boot.BootApplication            : Started BootApplication in 1.776 seconds (JVM running for 2.265)
+2020-08-04 17:58:13.391  INFO 6004 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 17:58:13.392  INFO 6004 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-04 17:58:13.396  INFO 6004 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-08-04 18:07:27.204  INFO 9716 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 9716 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 18:07:27.205  INFO 9716 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 18:07:27.235  INFO 9716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 18:07:27.235  INFO 9716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 18:07:27.997  INFO 9716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-04 18:07:28.003  INFO 9716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-04 18:07:28.003  INFO 9716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 18:07:28.055  INFO 9716 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-04 18:07:28.055  INFO 9716 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 820 ms
+2020-08-04 18:07:28.425  INFO 9716 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-08-04 18:07:28.425  INFO 9716 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/noAuthenticate'], []
+2020-08-04 18:07:28.446  INFO 9716 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@396166b2, org.springframework.security.web.context.SecurityContextPersistenceFilter@c12ebcf, org.springframework.security.web.header.HeaderWriterFilter@49961994, org.springframework.security.web.authentication.logout.LogoutFilter@37043458, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c6b76fa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4965e0ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d2a33b5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11fff61e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@213c303a, org.springframework.security.web.session.SessionManagementFilter@4dc5da16, org.springframework.security.web.access.ExceptionTranslationFilter@1d08e9e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59f280]
+2020-08-04 18:07:28.513  INFO 9716 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 18:07:28.551  INFO 9716 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-04 18:07:28.584  WARN 9716 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-04 18:07:28.653  INFO 9716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-04 18:07:28.675  INFO 9716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-04 18:07:28.681  INFO 9716 --- [restartedMain] com.soft.boot.BootApplication            : Started BootApplication in 1.731 seconds (JVM running for 2.231)
+2020-08-04 18:07:31.405  INFO 9716 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 18:07:31.405  INFO 9716 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-04 18:07:31.410  INFO 9716 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-08-04 18:07:36.660  INFO 9716 --- [http-nio-80-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-04 18:07:36.724  INFO 9716 --- [http-nio-80-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-04 18:07:36.728 DEBUG 9716 --- [http-nio-80-exec-2] c.s.b.m.SysUserDAO.selectByUsername      : ==>  Preparing: select USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, SSEX, DESCRIPTION from sys_user where USERNAME = ?
+2020-08-04 18:07:36.740 DEBUG 9716 --- [http-nio-80-exec-2] c.s.b.m.SysUserDAO.selectByUsername      : ==> Parameters: admin(String)
+2020-08-04 18:07:36.752 DEBUG 9716 --- [http-nio-80-exec-2] c.s.b.m.SysUserDAO.selectByUsername      : <==      Total: 1
+2020-08-04 18:07:36.755 DEBUG 9716 --- [http-nio-80-exec-2] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==>  Preparing: select r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME from sys_role r,sys_user users,sys_user_role ur where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=?
+2020-08-04 18:07:36.755 DEBUG 9716 --- [http-nio-80-exec-2] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==> Parameters: admin(String)
+2020-08-04 18:07:36.756 DEBUG 9716 --- [http-nio-80-exec-2] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : <==      Total: 1
+2020-08-04 18:07:36.823 DEBUG 9716 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:07:36.823 DEBUG 9716 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /index(String)
+2020-08-04 18:07:36.824 DEBUG 9716 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:07:36.860 DEBUG 9716 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:07:36.860 DEBUG 9716 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /webjars/bootstrap/3.3.5/css/bootstrap.min.css(String)
+2020-08-04 18:07:36.861 DEBUG 9716 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:07:36.875 DEBUG 9716 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:07:36.875 DEBUG 9716 --- [http-nio-80-exec-7] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:07:36.875 DEBUG 9716 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /webjars/jquery/3.1.1/jquery.min.js(String)
+2020-08-04 18:07:36.875 DEBUG 9716 --- [http-nio-80-exec-7] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /webjars/bootstrap/3.3.5/js/bootstrap.min.js(String)
+2020-08-04 18:07:36.876 DEBUG 9716 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:07:36.877 DEBUG 9716 --- [http-nio-80-exec-7] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:07:36.931 DEBUG 9716 --- [http-nio-80-exec-8] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:07:36.931 DEBUG 9716 --- [http-nio-80-exec-8] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /webjars/bootstrap/3.3.5/js/bootstrap.min.js(String)
+2020-08-04 18:07:36.932 DEBUG 9716 --- [http-nio-80-exec-8] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:11:44.449  INFO 148 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 148 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 18:11:44.451  INFO 148 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 18:11:44.478  INFO 148 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 18:11:44.478  INFO 148 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 18:11:45.236  INFO 148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-04 18:11:45.241  INFO 148 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-04 18:11:45.241  INFO 148 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 18:11:45.293  INFO 148 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-04 18:11:45.294  INFO 148 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 815 ms
+2020-08-04 18:11:45.654  INFO 148 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-08-04 18:11:45.654  INFO 148 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/noAuthenticate'], []
+2020-08-04 18:11:45.675  INFO 148 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4405961e, org.springframework.security.web.context.SecurityContextPersistenceFilter@20330545, org.springframework.security.web.header.HeaderWriterFilter@58add589, org.springframework.security.web.authentication.logout.LogoutFilter@78dff917, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@367e2577, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@e064be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5672db96, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4209d6c4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d0b0688, org.springframework.security.web.session.SessionManagementFilter@54a170cb, org.springframework.security.web.access.ExceptionTranslationFilter@62d6af54, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@472ef193]
+2020-08-04 18:11:45.743  INFO 148 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 18:11:45.783  INFO 148 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-04 18:11:45.817  WARN 148 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-04 18:11:45.888  INFO 148 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-04 18:11:45.912  INFO 148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-04 18:11:45.920  INFO 148 --- [restartedMain] com.soft.boot.BootApplication            : Started BootApplication in 1.731 seconds (JVM running for 2.229)
+2020-08-04 18:11:48.109  INFO 148 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 18:11:48.109  INFO 148 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-04 18:11:48.113  INFO 148 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-08-04 18:11:52.505  INFO 148 --- [http-nio-80-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-04 18:11:52.571  INFO 148 --- [http-nio-80-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-04 18:11:52.575 DEBUG 148 --- [http-nio-80-exec-5] c.s.b.m.SysUserDAO.selectByUsername      : ==>  Preparing: select USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, SSEX, DESCRIPTION from sys_user where USERNAME = ?
+2020-08-04 18:11:52.586 DEBUG 148 --- [http-nio-80-exec-5] c.s.b.m.SysUserDAO.selectByUsername      : ==> Parameters: admin(String)
+2020-08-04 18:11:52.598 DEBUG 148 --- [http-nio-80-exec-5] c.s.b.m.SysUserDAO.selectByUsername      : <==      Total: 1
+2020-08-04 18:11:52.601 DEBUG 148 --- [http-nio-80-exec-5] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==>  Preparing: select r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME from sys_role r,sys_user users,sys_user_role ur where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=?
+2020-08-04 18:11:52.602 DEBUG 148 --- [http-nio-80-exec-5] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==> Parameters: admin(String)
+2020-08-04 18:11:52.602 DEBUG 148 --- [http-nio-80-exec-5] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : <==      Total: 1
+2020-08-04 18:11:52.670 DEBUG 148 --- [http-nio-80-exec-7] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:11:52.670 DEBUG 148 --- [http-nio-80-exec-7] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /index(String)
+2020-08-04 18:11:52.671 DEBUG 148 --- [http-nio-80-exec-7] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:11:52.702 DEBUG 148 --- [http-nio-80-exec-8] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:11:52.703 DEBUG 148 --- [http-nio-80-exec-8] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /webjars/bootstrap/3.3.5/css/bootstrap.min.css(String)
+2020-08-04 18:11:52.703 DEBUG 148 --- [http-nio-80-exec-8] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:11:52.719 DEBUG 148 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:11:52.719 DEBUG 148 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:11:52.720 DEBUG 148 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /webjars/jquery/3.1.1/jquery.min.js(String)
+2020-08-04 18:11:52.720 DEBUG 148 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /webjars/bootstrap/3.3.5/js/bootstrap.min.js(String)
+2020-08-04 18:11:52.721 DEBUG 148 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:11:52.721 DEBUG 148 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:11:52.770 DEBUG 148 --- [http-nio-80-exec-9] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:11:52.770 DEBUG 148 --- [http-nio-80-exec-9] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /webjars/bootstrap/3.3.5/js/bootstrap.min.js(String)
+2020-08-04 18:11:52.771 DEBUG 148 --- [http-nio-80-exec-9] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:15:55.141  INFO 1656 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 1656 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 18:15:55.143  INFO 1656 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 18:15:55.168  INFO 1656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 18:15:55.168  INFO 1656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 18:15:55.919  INFO 1656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-04 18:15:55.924  INFO 1656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-04 18:15:55.924  INFO 1656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 18:15:55.978  INFO 1656 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-04 18:15:55.979  INFO 1656 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 810 ms
+2020-08-04 18:15:56.341  INFO 1656 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-08-04 18:15:56.341  INFO 1656 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/noAuthenticate'], []
+2020-08-04 18:15:56.361  INFO 1656 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@558c8177, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b2eaa66, org.springframework.security.web.header.HeaderWriterFilter@596ee6cd, org.springframework.security.web.authentication.logout.LogoutFilter@d24b484, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26359b57, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@9b197df, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5fb6c7e6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@634ebfac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1015beab, org.springframework.security.web.session.SessionManagementFilter@29af7ad, org.springframework.security.web.access.ExceptionTranslationFilter@42e5fbfc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49479791]
+2020-08-04 18:15:56.428  INFO 1656 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 18:15:56.466  INFO 1656 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-04 18:15:56.625  WARN 1656 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-04 18:15:56.694  INFO 1656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-04 18:15:56.718  INFO 1656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-04 18:15:56.725  INFO 1656 --- [restartedMain] com.soft.boot.BootApplication            : Started BootApplication in 1.847 seconds (JVM running for 2.331)
+2020-08-04 18:16:10.227  INFO 1656 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 18:16:10.227  INFO 1656 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-04 18:16:10.232  INFO 1656 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-08-04 18:16:14.892  INFO 1656 --- [http-nio-80-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-04 18:16:14.956  INFO 1656 --- [http-nio-80-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-04 18:16:14.959 DEBUG 1656 --- [http-nio-80-exec-5] c.s.b.m.SysUserDAO.selectByUsername      : ==>  Preparing: select USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, SSEX, DESCRIPTION from sys_user where USERNAME = ?
+2020-08-04 18:16:14.971 DEBUG 1656 --- [http-nio-80-exec-5] c.s.b.m.SysUserDAO.selectByUsername      : ==> Parameters: admin(String)
+2020-08-04 18:16:14.983 DEBUG 1656 --- [http-nio-80-exec-5] c.s.b.m.SysUserDAO.selectByUsername      : <==      Total: 1
+2020-08-04 18:16:14.986 DEBUG 1656 --- [http-nio-80-exec-5] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==>  Preparing: select r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME from sys_role r,sys_user users,sys_user_role ur where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=?
+2020-08-04 18:16:14.987 DEBUG 1656 --- [http-nio-80-exec-5] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==> Parameters: admin(String)
+2020-08-04 18:16:14.987 DEBUG 1656 --- [http-nio-80-exec-5] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : <==      Total: 1
+2020-08-04 18:16:15.055 DEBUG 1656 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:16:15.055 DEBUG 1656 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /index(String)
+2020-08-04 18:16:15.056 DEBUG 1656 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:16:15.094 DEBUG 1656 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:16:15.094 DEBUG 1656 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /webjars/bootstrap/css/bootstrap.min.css(String)
+2020-08-04 18:16:15.094 DEBUG 1656 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:16:15.113 DEBUG 1656 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:16:15.114 DEBUG 1656 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /webjars/jquery/jquery.min.js(String)
+2020-08-04 18:16:15.114 DEBUG 1656 --- [http-nio-80-exec-7] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:16:15.114 DEBUG 1656 --- [http-nio-80-exec-7] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /webjars/bootstrap/js/bootstrap.min.js(String)
+2020-08-04 18:16:15.115 DEBUG 1656 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:16:15.115 DEBUG 1656 --- [http-nio-80-exec-7] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:16:15.188 DEBUG 1656 --- [http-nio-80-exec-9] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:16:15.188 DEBUG 1656 --- [http-nio-80-exec-8] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 18:16:15.188 DEBUG 1656 --- [http-nio-80-exec-8] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /webjars/bootstrap/js/bootstrap.min.js.map(String)
+2020-08-04 18:16:15.188 DEBUG 1656 --- [http-nio-80-exec-9] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /webjars/bootstrap/css/bootstrap.min.css.map(String)
+2020-08-04 18:16:15.188 DEBUG 1656 --- [http-nio-80-exec-8] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 18:16:15.188 DEBUG 1656 --- [http-nio-80-exec-9] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
