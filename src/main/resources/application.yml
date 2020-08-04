@@ -1,0 +1,39 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/security?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    mode: LEGACYHTML5
+    encoding: utf-8
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    servlet:
+      content-type: text/html
+  resources:
+    add-mappings: true
+  aop:
+    auto: true
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.soft.boot.mapper
+  configuration:
+    use-generated-keys: true
+    use-column-label: true
+    map-underscore-to-camel-case: true
+
+logging:
+  file:
+    path: log
+    name: boot.log
+  level:
+    com.soft.boot.mapper: debug
+    root: info

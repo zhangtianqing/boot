@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soft.boot.mapper.SysUserDAO">
+  <resultMap id="BaseResultMap" type="com.soft.boot.domain.SysUser">
+    <id column="USER_ID" jdbcType="BIGINT" property="USER_ID" />
+    <result column="USERNAME" jdbcType="VARCHAR" property="USERNAME" />
+    <result column="PASSWORD" jdbcType="VARCHAR" property="PASSWORD" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="EMAIL" />
+    <result column="MOBILE" jdbcType="VARCHAR" property="MOBILE" />
+    <result column="STATUS" jdbcType="CHAR" property="STATUS" />
+    <result column="CRATE_TIME" jdbcType="TIMESTAMP" property="CRATE_TIME" />
+    <result column="MODIFY_TIME" jdbcType="TIMESTAMP" property="MODIFY_TIME" />
+    <result column="LASsys_LOGIN_TIME" jdbcType="TIMESTAMP" property="LASsys_LOGIN_TIME" />
+    <result column="SSEX" jdbcType="CHAR" property="SSEX" />
+    <result column="DESCRIPTION" jdbcType="VARCHAR" property="DESCRIPTION" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, 
+    LASsys_LOGIN_TIME, SSEX, DESCRIPTION
+  </sql>
+
+  <select id="selectByUsername" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from sys_user
+    where USERNAME = #{username,jdbcType=VARCHAR}
+  </select>
+  <select id="selectALL" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from sys_user
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_user
+    where USER_ID = #{USER_ID,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sys_user
+    where USER_ID = #{USER_ID,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.soft.boot.domain.SysUser">
+    insert into sys_user (USER_ID, USERNAME, `PASSWORD`, 
+      EMAIL, MOBILE, `STATUS`, 
+      CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, 
+      SSEX, DESCRIPTION)
+    values (#{USER_ID,jdbcType=BIGINT}, #{USERNAME,jdbcType=VARCHAR}, #{PASSWORD,jdbcType=VARCHAR}, 
+      #{EMAIL,jdbcType=VARCHAR}, #{MOBILE,jdbcType=VARCHAR}, #{STATUS,jdbcType=CHAR}, 
+      #{CRATE_TIME,jdbcType=TIMESTAMP}, #{MODIFY_TIME,jdbcType=TIMESTAMP}, #{LASsys_LOGIN_TIME,jdbcType=TIMESTAMP}, 
+      #{SSEX,jdbcType=CHAR}, #{DESCRIPTION,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.soft.boot.domain.SysUser">
+    insert into sys_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="USER_ID != null">
+        USER_ID,
+      </if>
+      <if test="USERNAME != null">
+        USERNAME,
+      </if>
+      <if test="PASSWORD != null">
+        `PASSWORD`,
+      </if>
+      <if test="EMAIL != null">
+        EMAIL,
+      </if>
+      <if test="MOBILE != null">
+        MOBILE,
+      </if>
+      <if test="STATUS != null">
+        `STATUS`,
+      </if>
+      <if test="CRATE_TIME != null">
+        CRATE_TIME,
+      </if>
+      <if test="MODIFY_TIME != null">
+        MODIFY_TIME,
+      </if>
+      <if test="LASsys_LOGIN_TIME != null">
+        LASsys_LOGIN_TIME,
+      </if>
+      <if test="SSEX != null">
+        SSEX,
+      </if>
+      <if test="DESCRIPTION != null">
+        DESCRIPTION,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="USER_ID != null">
+        #{USER_ID,jdbcType=BIGINT},
+      </if>
+      <if test="USERNAME != null">
+        #{USERNAME,jdbcType=VARCHAR},
+      </if>
+      <if test="PASSWORD != null">
+        #{PASSWORD,jdbcType=VARCHAR},
+      </if>
+      <if test="EMAIL != null">
+        #{EMAIL,jdbcType=VARCHAR},
+      </if>
+      <if test="MOBILE != null">
+        #{MOBILE,jdbcType=VARCHAR},
+      </if>
+      <if test="STATUS != null">
+        #{STATUS,jdbcType=CHAR},
+      </if>
+      <if test="CRATE_TIME != null">
+        #{CRATE_TIME,jdbcType=TIMESTAMP},
+      </if>
+      <if test="MODIFY_TIME != null">
+        #{MODIFY_TIME,jdbcType=TIMESTAMP},
+      </if>
+      <if test="LASsys_LOGIN_TIME != null">
+        #{LASsys_LOGIN_TIME,jdbcType=TIMESTAMP},
+      </if>
+      <if test="SSEX != null">
+        #{SSEX,jdbcType=CHAR},
+      </if>
+      <if test="DESCRIPTION != null">
+        #{DESCRIPTION,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.soft.boot.domain.SysUser">
+    update sys_user
+    <set>
+      <if test="USERNAME != null">
+        USERNAME = #{USERNAME,jdbcType=VARCHAR},
+      </if>
+      <if test="PASSWORD != null">
+        `PASSWORD` = #{PASSWORD,jdbcType=VARCHAR},
+      </if>
+      <if test="EMAIL != null">
+        EMAIL = #{EMAIL,jdbcType=VARCHAR},
+      </if>
+      <if test="MOBILE != null">
+        MOBILE = #{MOBILE,jdbcType=VARCHAR},
+      </if>
+      <if test="STATUS != null">
+        `STATUS` = #{STATUS,jdbcType=CHAR},
+      </if>
+      <if test="CRATE_TIME != null">
+        CRATE_TIME = #{CRATE_TIME,jdbcType=TIMESTAMP},
+      </if>
+      <if test="MODIFY_TIME != null">
+        MODIFY_TIME = #{MODIFY_TIME,jdbcType=TIMESTAMP},
+      </if>
+      <if test="LASsys_LOGIN_TIME != null">
+        LASsys_LOGIN_TIME = #{LASsys_LOGIN_TIME,jdbcType=TIMESTAMP},
+      </if>
+      <if test="SSEX != null">
+        SSEX = #{SSEX,jdbcType=CHAR},
+      </if>
+      <if test="DESCRIPTION != null">
+        DESCRIPTION = #{DESCRIPTION,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where USER_ID = #{USER_ID,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.soft.boot.domain.SysUser">
+    update sys_user
+    set USERNAME = #{USERNAME,jdbcType=VARCHAR},
+      `PASSWORD` = #{PASSWORD,jdbcType=VARCHAR},
+      EMAIL = #{EMAIL,jdbcType=VARCHAR},
+      MOBILE = #{MOBILE,jdbcType=VARCHAR},
+      `STATUS` = #{STATUS,jdbcType=CHAR},
+      CRATE_TIME = #{CRATE_TIME,jdbcType=TIMESTAMP},
+      MODIFY_TIME = #{MODIFY_TIME,jdbcType=TIMESTAMP},
+      LASsys_LOGIN_TIME = #{LASsys_LOGIN_TIME,jdbcType=TIMESTAMP},
+      SSEX = #{SSEX,jdbcType=CHAR},
+      DESCRIPTION = #{DESCRIPTION,jdbcType=VARCHAR}
+    where USER_ID = #{USER_ID,jdbcType=BIGINT}
+  </update>
+</mapper>

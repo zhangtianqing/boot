@@ -1,0 +1,938 @@
+2020-08-04 01:33:24.715  INFO 11000 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 11000 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 01:33:24.720  INFO 11000 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 01:33:24.753  INFO 11000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 01:33:24.753  INFO 11000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 01:33:26.663  INFO 11000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-04 01:33:26.678  INFO 11000 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-04 01:33:26.678  INFO 11000 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 01:33:26.755  INFO 11000 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-04 01:33:26.755  INFO 11000 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2002 ms
+2020-08-04 01:33:27.613  INFO 11000 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-08-04 01:33:27.613  INFO 11000 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/noAuthenticate'], []
+2020-08-04 01:33:27.639  INFO 11000 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25799532, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e56159a, org.springframework.security.web.header.HeaderWriterFilter@1f3661eb, org.springframework.security.web.authentication.logout.LogoutFilter@1479668f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@fe77d07, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1118e753, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47f52815, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40163988, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@567ebeb7, org.springframework.security.web.session.SessionManagementFilter@42390384, org.springframework.security.web.access.ExceptionTranslationFilter@1f9389ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58b2753f]
+2020-08-04 01:33:27.740  INFO 11000 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 01:33:27.806  INFO 11000 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-04 01:33:27.873  WARN 11000 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-04 01:33:28.036  INFO 11000 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-04 01:33:28.089  INFO 11000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-04 01:33:28.112  INFO 11000 --- [restartedMain] com.soft.boot.BootApplication            : Started BootApplication in 3.983 seconds (JVM running for 4.754)
+2020-08-04 01:33:35.523  INFO 11000 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 01:33:35.524  INFO 11000 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-04 01:33:35.528  INFO 11000 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-08-04 01:33:35.748  INFO 11000 --- [http-nio-80-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-04 01:33:35.884  INFO 11000 --- [http-nio-80-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-04 01:33:35.888 DEBUG 11000 --- [http-nio-80-exec-3] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 01:33:35.907 DEBUG 11000 --- [http-nio-80-exec-3] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 01:33:35.922 DEBUG 11000 --- [http-nio-80-exec-3] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 01:33:40.229 DEBUG 11000 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 01:33:40.229 DEBUG 11000 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 01:33:40.230 DEBUG 11000 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 01:33:47.334 DEBUG 11000 --- [http-nio-80-exec-7] c.s.b.m.SysUserDAO.selectByUsername      : ==>  Preparing: select USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, SSEX, DESCRIPTION from sys_user where USERNAME = ?
+2020-08-04 01:33:47.334 DEBUG 11000 --- [http-nio-80-exec-7] c.s.b.m.SysUserDAO.selectByUsername      : ==> Parameters: admin(String)
+2020-08-04 01:33:47.337 DEBUG 11000 --- [http-nio-80-exec-7] c.s.b.m.SysUserDAO.selectByUsername      : <==      Total: 1
+2020-08-04 01:33:47.338 DEBUG 11000 --- [http-nio-80-exec-7] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==>  Preparing: select r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME from sys_role r,sys_user users,sys_user_role ur where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=?
+2020-08-04 01:33:47.338 DEBUG 11000 --- [http-nio-80-exec-7] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==> Parameters: admin(String)
+2020-08-04 01:33:47.349 DEBUG 11000 --- [http-nio-80-exec-7] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : <==      Total: 1
+2020-08-04 01:33:47.400 ERROR 11000 --- [http-nio-80-exec-7] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: null
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: java.lang.NullPointerException: null
+	at com.soft.boot.util.SpringSecurityUtil.currentUser(SpringSecurityUtil.java:13) ~[classes/:na]
+	at com.soft.boot.util.SysLogAspect.saveSysLog(SysLogAspect.java:69) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:626) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:66) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:56) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at com.soft.boot.service.UserService$$EnhancerBySpringCGLIB$$d9df00f.loadUserByUsername(<generated>) ~[classes/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	... 51 common frames omitted
+
+2020-08-04 01:33:47.515 DEBUG 11000 --- [http-nio-80-exec-8] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 01:33:47.516 DEBUG 11000 --- [http-nio-80-exec-8] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 01:33:47.517 DEBUG 11000 --- [http-nio-80-exec-8] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 01:40:48.809  INFO 7856 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 7856 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 01:40:48.811  INFO 7856 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 01:40:48.838  INFO 7856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 01:40:48.838  INFO 7856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 01:40:49.599  INFO 7856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-04 01:40:49.604  INFO 7856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-04 01:40:49.604  INFO 7856 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 01:40:49.655  INFO 7856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-04 01:40:49.655  INFO 7856 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 817 ms
+2020-08-04 01:40:50.032  INFO 7856 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-08-04 01:40:50.033  INFO 7856 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/noAuthenticate'], []
+2020-08-04 01:40:50.055  INFO 7856 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@521d6201, org.springframework.security.web.context.SecurityContextPersistenceFilter@353c2d12, org.springframework.security.web.header.HeaderWriterFilter@2fb26f8b, org.springframework.security.web.authentication.logout.LogoutFilter@31d78def, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@510d5e79, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3e53d7c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7735ab78, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b202a6f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5352fcb7, org.springframework.security.web.session.SessionManagementFilter@32c33b7b, org.springframework.security.web.access.ExceptionTranslationFilter@3b42173b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@480054e2]
+2020-08-04 01:40:50.124  INFO 7856 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 01:40:50.164  INFO 7856 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-04 01:40:50.199  WARN 7856 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-04 01:40:50.271  INFO 7856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-04 01:40:50.296  INFO 7856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-04 01:40:50.303  INFO 7856 --- [restartedMain] com.soft.boot.BootApplication            : Started BootApplication in 1.747 seconds (JVM running for 2.234)
+2020-08-04 01:40:53.665  INFO 7856 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 01:40:53.666  INFO 7856 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-04 01:40:53.670  INFO 7856 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-08-04 01:40:53.756  INFO 7856 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-04 01:40:53.821  INFO 7856 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-04 01:40:53.825 DEBUG 7856 --- [http-nio-80-exec-1] c.s.b.m.SysUserDAO.selectByUsername      : ==>  Preparing: select USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, SSEX, DESCRIPTION from sys_user where USERNAME = ?
+2020-08-04 01:40:53.836 DEBUG 7856 --- [http-nio-80-exec-1] c.s.b.m.SysUserDAO.selectByUsername      : ==> Parameters: admin(String)
+2020-08-04 01:40:53.849 DEBUG 7856 --- [http-nio-80-exec-1] c.s.b.m.SysUserDAO.selectByUsername      : <==      Total: 1
+2020-08-04 01:40:53.852 DEBUG 7856 --- [http-nio-80-exec-1] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==>  Preparing: select r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME from sys_role r,sys_user users,sys_user_role ur where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=?
+2020-08-04 01:40:53.852 DEBUG 7856 --- [http-nio-80-exec-1] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==> Parameters: admin(String)
+2020-08-04 01:40:53.853 DEBUG 7856 --- [http-nio-80-exec-1] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : <==      Total: 1
+2020-08-04 01:40:53.885 ERROR 7856 --- [http-nio-80-exec-1] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: null
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: java.lang.NullPointerException: null
+	at com.soft.boot.util.SpringSecurityUtil.currentUser(SpringSecurityUtil.java:13) ~[classes/:na]
+	at com.soft.boot.util.SysLogAspect.saveSysLog(SysLogAspect.java:69) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:626) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:66) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:56) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at com.soft.boot.service.UserService$$EnhancerBySpringCGLIB$$519d03c2.loadUserByUsername(<generated>) ~[classes/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	... 47 common frames omitted
+
+2020-08-04 01:40:54.006 DEBUG 7856 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 01:40:54.007 DEBUG 7856 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 01:40:54.008 DEBUG 7856 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 01:40:58.944 DEBUG 7856 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 01:40:58.945 DEBUG 7856 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 01:40:58.945 DEBUG 7856 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 01:40:59.398 DEBUG 7856 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 01:40:59.398 DEBUG 7856 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 01:40:59.399 DEBUG 7856 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 01:41:03.642 DEBUG 7856 --- [http-nio-80-exec-7] c.s.b.m.SysUserDAO.selectByUsername      : ==>  Preparing: select USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, SSEX, DESCRIPTION from sys_user where USERNAME = ?
+2020-08-04 01:41:03.642 DEBUG 7856 --- [http-nio-80-exec-7] c.s.b.m.SysUserDAO.selectByUsername      : ==> Parameters: admin(String)
+2020-08-04 01:41:03.643 DEBUG 7856 --- [http-nio-80-exec-7] c.s.b.m.SysUserDAO.selectByUsername      : <==      Total: 1
+2020-08-04 01:41:03.644 DEBUG 7856 --- [http-nio-80-exec-7] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==>  Preparing: select r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME from sys_role r,sys_user users,sys_user_role ur where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=?
+2020-08-04 01:41:03.644 DEBUG 7856 --- [http-nio-80-exec-7] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==> Parameters: admin(String)
+2020-08-04 01:41:03.644 DEBUG 7856 --- [http-nio-80-exec-7] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : <==      Total: 1
+2020-08-04 01:41:03.646 ERROR 7856 --- [http-nio-80-exec-7] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: null
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: java.lang.NullPointerException: null
+	at com.soft.boot.util.SpringSecurityUtil.currentUser(SpringSecurityUtil.java:13) ~[classes/:na]
+	at com.soft.boot.util.SysLogAspect.saveSysLog(SysLogAspect.java:69) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:626) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:66) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:56) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at com.soft.boot.service.UserService$$EnhancerBySpringCGLIB$$519d03c2.loadUserByUsername(<generated>) ~[classes/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	... 47 common frames omitted
+
+2020-08-04 01:41:03.711 DEBUG 7856 --- [http-nio-80-exec-1] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 01:41:03.711 DEBUG 7856 --- [http-nio-80-exec-1] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 01:41:03.712 DEBUG 7856 --- [http-nio-80-exec-1] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 01:45:00.556  INFO 9464 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 9464 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 01:45:00.559  INFO 9464 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 01:45:00.588  INFO 9464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 01:45:00.588  INFO 9464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 01:45:01.322  INFO 9464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-04 01:45:01.327  INFO 9464 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-04 01:45:01.327  INFO 9464 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 01:45:01.377  INFO 9464 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-04 01:45:01.378  INFO 9464 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 790 ms
+2020-08-04 01:45:01.751  INFO 9464 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-08-04 01:45:01.751  INFO 9464 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/noAuthenticate'], []
+2020-08-04 01:45:01.778  INFO 9464 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5469fcd5, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e7e8a5, org.springframework.security.web.header.HeaderWriterFilter@7a3f5c0e, org.springframework.security.web.authentication.logout.LogoutFilter@6104c012, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@49a45b47, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@574d470d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d6f58c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@784935b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@480054e2, org.springframework.security.web.session.SessionManagementFilter@64140f66, org.springframework.security.web.access.ExceptionTranslationFilter@9407493, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d3d0bc3]
+2020-08-04 01:45:01.870  INFO 9464 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 01:45:01.910  INFO 9464 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-04 01:45:01.944  WARN 9464 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-04 01:45:02.016  INFO 9464 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-04 01:45:02.041  INFO 9464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-04 01:45:02.048  INFO 9464 --- [restartedMain] com.soft.boot.BootApplication            : Started BootApplication in 1.74 seconds (JVM running for 2.219)
+2020-08-04 01:45:05.384  INFO 9464 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 01:45:05.385  INFO 9464 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-04 01:45:05.389  INFO 9464 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-08-04 01:45:05.476  INFO 9464 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-04 01:45:05.540  INFO 9464 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-04 01:45:05.543 DEBUG 9464 --- [http-nio-80-exec-1] c.s.b.m.SysUserDAO.selectByUsername      : ==>  Preparing: select USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, SSEX, DESCRIPTION from sys_user where USERNAME = ?
+2020-08-04 01:45:05.555 DEBUG 9464 --- [http-nio-80-exec-1] c.s.b.m.SysUserDAO.selectByUsername      : ==> Parameters: admin(String)
+2020-08-04 01:45:05.567 DEBUG 9464 --- [http-nio-80-exec-1] c.s.b.m.SysUserDAO.selectByUsername      : <==      Total: 1
+2020-08-04 01:45:05.570 DEBUG 9464 --- [http-nio-80-exec-1] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==>  Preparing: select r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME from sys_role r,sys_user users,sys_user_role ur where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=?
+2020-08-04 01:45:05.571 DEBUG 9464 --- [http-nio-80-exec-1] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==> Parameters: admin(String)
+2020-08-04 01:45:05.571 DEBUG 9464 --- [http-nio-80-exec-1] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : <==      Total: 1
+2020-08-04 01:45:05.603 ERROR 9464 --- [http-nio-80-exec-1] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: null
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: java.lang.NullPointerException: null
+	at com.soft.boot.util.SpringSecurityUtil.currentUser(SpringSecurityUtil.java:13) ~[classes/:na]
+	at com.soft.boot.util.SysLogAspect.saveSysLog(SysLogAspect.java:69) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:626) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:66) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:56) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at com.soft.boot.service.UserService$$EnhancerBySpringCGLIB$$5f234d1a.loadUserByUsername(<generated>) ~[classes/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	... 47 common frames omitted
+
+2020-08-04 01:45:05.725 DEBUG 9464 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 01:45:05.725 DEBUG 9464 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 01:45:05.726 DEBUG 9464 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 01:47:41.766  INFO 12812 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 12812 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 01:47:41.768  INFO 12812 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 01:47:41.792  INFO 12812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 01:47:41.793  INFO 12812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 01:47:42.511  INFO 12812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-04 01:47:42.516  INFO 12812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-04 01:47:42.517  INFO 12812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 01:47:42.566  INFO 12812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-04 01:47:42.566  INFO 12812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 773 ms
+2020-08-04 01:47:42.933  INFO 12812 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-08-04 01:47:42.933  INFO 12812 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/noAuthenticate'], []
+2020-08-04 01:47:42.953  INFO 12812 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f4b4f20, org.springframework.security.web.context.SecurityContextPersistenceFilter@54530f92, org.springframework.security.web.header.HeaderWriterFilter@419fe0fb, org.springframework.security.web.authentication.logout.LogoutFilter@1b8bc71a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b020f50, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4d5336fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68d1400e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7646857e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3609f19b, org.springframework.security.web.session.SessionManagementFilter@57c5e765, org.springframework.security.web.access.ExceptionTranslationFilter@2d42c884, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@367662e4]
+2020-08-04 01:47:43.019  INFO 12812 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 01:47:43.057  INFO 12812 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-04 01:47:43.090  WARN 12812 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-04 01:47:43.159  INFO 12812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-04 01:47:43.183  INFO 12812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-04 01:47:43.189  INFO 12812 --- [restartedMain] com.soft.boot.BootApplication            : Started BootApplication in 1.675 seconds (JVM running for 2.176)
+2020-08-04 01:47:46.238  INFO 12812 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 01:47:46.239  INFO 12812 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-04 01:47:46.243  INFO 12812 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-08-04 01:47:46.330  INFO 12812 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-04 01:47:46.398  INFO 12812 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-04 01:47:46.402 DEBUG 12812 --- [http-nio-80-exec-1] c.s.b.m.SysUserDAO.selectByUsername      : ==>  Preparing: select USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, SSEX, DESCRIPTION from sys_user where USERNAME = ?
+2020-08-04 01:47:46.413 DEBUG 12812 --- [http-nio-80-exec-1] c.s.b.m.SysUserDAO.selectByUsername      : ==> Parameters: admin(String)
+2020-08-04 01:47:46.426 DEBUG 12812 --- [http-nio-80-exec-1] c.s.b.m.SysUserDAO.selectByUsername      : <==      Total: 1
+2020-08-04 01:47:46.429 DEBUG 12812 --- [http-nio-80-exec-1] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==>  Preparing: select r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME from sys_role r,sys_user users,sys_user_role ur where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=?
+2020-08-04 01:47:46.429 DEBUG 12812 --- [http-nio-80-exec-1] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==> Parameters: admin(String)
+2020-08-04 01:47:46.429 DEBUG 12812 --- [http-nio-80-exec-1] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : <==      Total: 1
+2020-08-04 01:47:46.461 ERROR 12812 --- [http-nio-80-exec-1] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: null
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: java.lang.NullPointerException: null
+	at com.soft.boot.util.SpringSecurityUtil.currentUser(SpringSecurityUtil.java:13) ~[classes/:na]
+	at com.soft.boot.util.SysLogAspect.saveSysLog(SysLogAspect.java:69) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:626) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:66) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:56) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at com.soft.boot.service.UserService$$EnhancerBySpringCGLIB$$bb719f33.loadUserByUsername(<generated>) ~[classes/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	... 47 common frames omitted
+
+2020-08-04 01:47:46.581 DEBUG 12812 --- [http-nio-80-exec-3] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 01:47:46.581 DEBUG 12812 --- [http-nio-80-exec-3] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 01:47:46.582 DEBUG 12812 --- [http-nio-80-exec-3] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 15:53:56.301  INFO 9556 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 9556 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 15:53:56.318  INFO 9556 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 15:53:56.352  INFO 9556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 15:53:56.352  INFO 9556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 15:53:58.287  INFO 9556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-04 15:53:58.309  INFO 9556 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-04 15:53:58.310  INFO 9556 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 15:53:58.384  INFO 9556 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-04 15:53:58.384  INFO 9556 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2032 ms
+2020-08-04 15:53:59.152  INFO 9556 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-08-04 15:53:59.152  INFO 9556 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/noAuthenticate'], []
+2020-08-04 15:53:59.176  INFO 9556 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1015beab, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fb6c7e6, org.springframework.security.web.header.HeaderWriterFilter@29af7ad, org.springframework.security.web.authentication.logout.LogoutFilter@a7f9464, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79ac87b7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5fb9cde8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38dc6a2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62779539, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@151fcc19, org.springframework.security.web.session.SessionManagementFilter@418d0fb4, org.springframework.security.web.access.ExceptionTranslationFilter@5ab6e749, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e3feb9f]
+2020-08-04 15:53:59.271  INFO 9556 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 15:53:59.340  INFO 9556 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-04 15:53:59.399  WARN 9556 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-04 15:53:59.531  INFO 9556 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-04 15:53:59.570  INFO 9556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-04 15:53:59.584  INFO 9556 --- [restartedMain] com.soft.boot.BootApplication            : Started BootApplication in 3.848 seconds (JVM running for 4.716)
+2020-08-04 15:54:38.143  INFO 9556 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 15:54:38.143  INFO 9556 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-04 15:54:38.147  INFO 9556 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-08-04 15:54:38.380  INFO 9556 --- [http-nio-80-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-04 15:54:38.578  INFO 9556 --- [http-nio-80-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-04 15:54:38.582 DEBUG 9556 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 15:54:38.595 DEBUG 9556 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 15:54:38.652 DEBUG 9556 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 15:54:43.778 DEBUG 9556 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 15:54:43.779 DEBUG 9556 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /index(String)
+2020-08-04 15:54:43.779 DEBUG 9556 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 15:54:43.898 DEBUG 9556 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 15:54:43.899 DEBUG 9556 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 15:54:43.899 DEBUG 9556 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 15:54:48.357 DEBUG 9556 --- [http-nio-80-exec-8] c.s.b.m.SysUserDAO.selectByUsername      : ==>  Preparing: select USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, SSEX, DESCRIPTION from sys_user where USERNAME = ?
+2020-08-04 15:54:48.358 DEBUG 9556 --- [http-nio-80-exec-8] c.s.b.m.SysUserDAO.selectByUsername      : ==> Parameters: admin(String)
+2020-08-04 15:54:48.371 DEBUG 9556 --- [http-nio-80-exec-8] c.s.b.m.SysUserDAO.selectByUsername      : <==      Total: 1
+2020-08-04 15:54:48.371 DEBUG 9556 --- [http-nio-80-exec-8] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==>  Preparing: select r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME from sys_role r,sys_user users,sys_user_role ur where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=?
+2020-08-04 15:54:48.372 DEBUG 9556 --- [http-nio-80-exec-8] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==> Parameters: admin(String)
+2020-08-04 15:54:48.406 DEBUG 9556 --- [http-nio-80-exec-8] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : <==      Total: 1
+2020-08-04 15:54:48.567 ERROR 9556 --- [http-nio-80-exec-8] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: null
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: java.lang.NullPointerException: null
+	at com.soft.boot.util.SpringSecurityUtil.currentUser(SpringSecurityUtil.java:13) ~[classes/:na]
+	at com.soft.boot.util.SysLogAspect.saveSysLog(SysLogAspect.java:69) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:626) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:66) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:56) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at com.soft.boot.service.UserService$$EnhancerBySpringCGLIB$$329e551c.loadUserByUsername(<generated>) ~[classes/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	... 47 common frames omitted
+
+2020-08-04 15:54:48.703 DEBUG 9556 --- [http-nio-80-exec-9] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 15:54:48.703 DEBUG 9556 --- [http-nio-80-exec-9] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 15:54:48.704 DEBUG 9556 --- [http-nio-80-exec-9] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 15:59:00.233  INFO 1700 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 1700 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 15:59:00.235  INFO 1700 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 15:59:00.265  INFO 1700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 15:59:00.265  INFO 1700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 15:59:01.039  INFO 1700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-04 15:59:01.044  INFO 1700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-04 15:59:01.044  INFO 1700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 15:59:01.094  INFO 1700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-04 15:59:01.095  INFO 1700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 830 ms
+2020-08-04 15:59:01.490  INFO 1700 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-08-04 15:59:01.490  INFO 1700 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/noAuthenticate'], []
+2020-08-04 15:59:01.513  INFO 1700 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3bfcc249, org.springframework.security.web.context.SecurityContextPersistenceFilter@13000636, org.springframework.security.web.header.HeaderWriterFilter@79afe868, org.springframework.security.web.authentication.logout.LogoutFilter@38dc6a2a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6bf0208e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2eb49b7e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@533de949, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f3f6b1d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43a29bf0, org.springframework.security.web.session.SessionManagementFilter@7dc9601c, org.springframework.security.web.access.ExceptionTranslationFilter@1007aed0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e22ceac]
+2020-08-04 15:59:01.582  INFO 1700 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 15:59:01.623  INFO 1700 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-04 15:59:01.659  WARN 1700 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-04 15:59:01.732  INFO 1700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-04 15:59:01.758  INFO 1700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-04 15:59:01.765  INFO 1700 --- [restartedMain] com.soft.boot.BootApplication            : Started BootApplication in 1.809 seconds (JVM running for 2.373)
+2020-08-04 15:59:04.046  INFO 1700 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 15:59:04.046  INFO 1700 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-04 15:59:04.051  INFO 1700 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-08-04 15:59:04.139  INFO 1700 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-04 15:59:04.205  INFO 1700 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-04 15:59:04.209 DEBUG 1700 --- [http-nio-80-exec-1] c.s.b.m.SysUserDAO.selectByUsername      : ==>  Preparing: select USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, SSEX, DESCRIPTION from sys_user where USERNAME = ?
+2020-08-04 15:59:04.221 DEBUG 1700 --- [http-nio-80-exec-1] c.s.b.m.SysUserDAO.selectByUsername      : ==> Parameters: admin(String)
+2020-08-04 15:59:04.233 DEBUG 1700 --- [http-nio-80-exec-1] c.s.b.m.SysUserDAO.selectByUsername      : <==      Total: 1
+2020-08-04 15:59:04.236 DEBUG 1700 --- [http-nio-80-exec-1] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==>  Preparing: select r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME from sys_role r,sys_user users,sys_user_role ur where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=?
+2020-08-04 15:59:04.236 DEBUG 1700 --- [http-nio-80-exec-1] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==> Parameters: admin(String)
+2020-08-04 15:59:04.237 DEBUG 1700 --- [http-nio-80-exec-1] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : <==      Total: 1
+2020-08-04 15:59:04.271 ERROR 1700 --- [http-nio-80-exec-1] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: null
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:95) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+Caused by: java.lang.NullPointerException: null
+	at com.soft.boot.util.SpringSecurityUtil.currentUser(SpringSecurityUtil.java:13) ~[classes/:na]
+	at com.soft.boot.util.SysLogAspect.saveSysLog(SysLogAspect.java:69) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:626) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAfterReturningAdvice.afterReturning(AspectJAfterReturningAdvice.java:66) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:56) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at com.soft.boot.service.UserService$$EnhancerBySpringCGLIB$$74ab02b2.loadUserByUsername(<generated>) ~[classes/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	... 47 common frames omitted
+
+2020-08-04 15:59:04.398 DEBUG 1700 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 15:59:04.398 DEBUG 1700 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 15:59:04.399 DEBUG 1700 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 16:04:00.552  INFO 3212 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 3212 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 16:04:00.554  INFO 3212 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 16:04:00.583  INFO 3212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 16:04:00.583  INFO 3212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 16:04:01.148  WARN 3212 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.soft.boot.controller [Xlint:invalidAbsoluteTypeName]
+2020-08-04 16:04:01.153  INFO 3212 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-04 16:04:01.217 ERROR 3212 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.soft.boot.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at com.soft.boot.BootApplication.main(BootApplication.java:12) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.soft.boot.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:212) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:177) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158) ~[spring-boot-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	... 14 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.soft.boot.controller [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1140) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1113) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:505) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 21 common frames omitted
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.soft.boot.controller [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319) ~[aspectjweaver-1.9.6.jar:na]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:347) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:299) ~[spring-aop-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:430) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 43 common frames omitted
+
+2020-08-04 16:13:56.140  INFO 9664 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 9664 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 16:13:56.142  INFO 9664 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 16:13:56.168  INFO 9664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 16:13:56.168  INFO 9664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 16:13:57.027  INFO 9664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-04 16:13:57.034  INFO 9664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-04 16:13:57.034  INFO 9664 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 16:13:57.085  INFO 9664 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-04 16:13:57.086  INFO 9664 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 918 ms
+2020-08-04 16:13:57.477  INFO 9664 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-08-04 16:13:57.477  INFO 9664 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/noAuthenticate'], []
+2020-08-04 16:13:57.518  INFO 9664 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44220cc4, org.springframework.security.web.context.SecurityContextPersistenceFilter@75f9e148, org.springframework.security.web.header.HeaderWriterFilter@5bc1cc99, org.springframework.security.web.authentication.logout.LogoutFilter@256144a9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3eb84267, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7f370fc3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15b75979, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@574db932, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a848d4e, org.springframework.security.web.session.SessionManagementFilter@b19b6bc, org.springframework.security.web.access.ExceptionTranslationFilter@51fb5b6b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36a1519f]
+2020-08-04 16:13:57.593  INFO 9664 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 16:13:57.636  INFO 9664 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-04 16:13:57.676  WARN 9664 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-04 16:13:57.759  INFO 9664 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-04 16:13:57.786  INFO 9664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-04 16:13:57.793  INFO 9664 --- [restartedMain] com.soft.boot.BootApplication            : Started BootApplication in 1.92 seconds (JVM running for 2.471)
+2020-08-04 16:13:59.591  INFO 9664 --- [http-nio-80-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 16:13:59.591  INFO 9664 --- [http-nio-80-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-04 16:13:59.595  INFO 9664 --- [http-nio-80-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-08-04 16:13:59.681  INFO 9664 --- [http-nio-80-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-04 16:13:59.747  INFO 9664 --- [http-nio-80-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-04 16:13:59.751 DEBUG 9664 --- [http-nio-80-exec-3] c.s.b.m.SysUserDAO.selectByUsername      : ==>  Preparing: select USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, SSEX, DESCRIPTION from sys_user where USERNAME = ?
+2020-08-04 16:13:59.762 DEBUG 9664 --- [http-nio-80-exec-3] c.s.b.m.SysUserDAO.selectByUsername      : ==> Parameters: admin(String)
+2020-08-04 16:13:59.775 DEBUG 9664 --- [http-nio-80-exec-3] c.s.b.m.SysUserDAO.selectByUsername      : <==      Total: 1
+2020-08-04 16:13:59.778 DEBUG 9664 --- [http-nio-80-exec-3] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==>  Preparing: select r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME from sys_role r,sys_user users,sys_user_role ur where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=?
+2020-08-04 16:13:59.778 DEBUG 9664 --- [http-nio-80-exec-3] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==> Parameters: admin(String)
+2020-08-04 16:13:59.779 DEBUG 9664 --- [http-nio-80-exec-3] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : <==      Total: 1
+2020-08-04 16:13:59.854 DEBUG 9664 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 16:13:59.854 DEBUG 9664 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /index(String)
+2020-08-04 16:13:59.855 DEBUG 9664 --- [http-nio-80-exec-2] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 16:14:00.075 DEBUG 9664 --- [http-nio-80-exec-1] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 16:14:00.075 DEBUG 9664 --- [http-nio-80-exec-1] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /js/jquery-3.3.1.js(String)
+2020-08-04 16:14:00.076 DEBUG 9664 --- [http-nio-80-exec-1] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 16:14:00.243 DEBUG 9664 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 16:14:00.243 DEBUG 9664 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /favicon.ico(String)
+2020-08-04 16:14:00.244 DEBUG 9664 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 16:14:50.986  INFO 7512 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 7512 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 16:14:50.987  INFO 7512 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 16:14:51.017  INFO 7512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 16:14:51.017  INFO 7512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 16:14:51.760  INFO 7512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-04 16:14:51.765  INFO 7512 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-04 16:14:51.766  INFO 7512 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 16:14:51.816  INFO 7512 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-04 16:14:51.817  INFO 7512 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 800 ms
+2020-08-04 16:14:52.209  INFO 7512 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-08-04 16:14:52.209  INFO 7512 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/noAuthenticate'], []
+2020-08-04 16:14:52.231  INFO 7512 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e5fd357, org.springframework.security.web.context.SecurityContextPersistenceFilter@77d0faf1, org.springframework.security.web.header.HeaderWriterFilter@65a86129, org.springframework.security.web.authentication.logout.LogoutFilter@7b600e4c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b421ac5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1c656e8b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1943dc5f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d01ae72, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51a99e4, org.springframework.security.web.session.SessionManagementFilter@65b44b3b, org.springframework.security.web.access.ExceptionTranslationFilter@b15286, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f140343]
+2020-08-04 16:14:52.299  INFO 7512 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 16:14:52.351  INFO 7512 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-04 16:14:52.392  WARN 7512 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-04 16:14:52.469  INFO 7512 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-04 16:14:52.496  INFO 7512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-04 16:14:52.502  INFO 7512 --- [restartedMain] com.soft.boot.BootApplication            : Started BootApplication in 1.781 seconds (JVM running for 2.273)
+2020-08-04 16:14:52.622  INFO 7512 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 16:14:52.622  INFO 7512 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-04 16:14:52.628  INFO 7512 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-08-04 16:14:58.375  INFO 7512 --- [http-nio-80-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-04 16:14:58.439  INFO 7512 --- [http-nio-80-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-04 16:14:58.443 DEBUG 7512 --- [http-nio-80-exec-3] c.s.b.m.SysUserDAO.selectByUsername      : ==>  Preparing: select USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, SSEX, DESCRIPTION from sys_user where USERNAME = ?
+2020-08-04 16:14:58.455 DEBUG 7512 --- [http-nio-80-exec-3] c.s.b.m.SysUserDAO.selectByUsername      : ==> Parameters: admin(String)
+2020-08-04 16:14:58.467 DEBUG 7512 --- [http-nio-80-exec-3] c.s.b.m.SysUserDAO.selectByUsername      : <==      Total: 1
+2020-08-04 16:14:58.470 DEBUG 7512 --- [http-nio-80-exec-3] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==>  Preparing: select r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME from sys_role r,sys_user users,sys_user_role ur where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=?
+2020-08-04 16:14:58.470 DEBUG 7512 --- [http-nio-80-exec-3] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==> Parameters: admin(String)
+2020-08-04 16:14:58.471 DEBUG 7512 --- [http-nio-80-exec-3] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : <==      Total: 1
+2020-08-04 16:14:58.539 DEBUG 7512 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 16:14:58.539 DEBUG 7512 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /index(String)
+2020-08-04 16:14:58.540 DEBUG 7512 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 16:14:58.582 DEBUG 7512 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 16:14:58.582 DEBUG 7512 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /js/jquery-3.3.1.js(String)
+2020-08-04 16:14:58.583 DEBUG 7512 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 16:15:13.651  INFO 636 --- [restartedMain] com.soft.boot.BootApplication            : Starting BootApplication on DESKTOP-JB6OFL3 with PID 636 (E:\Workspaces\idea\boot\target\classes started by 容的雪 in E:\Workspaces\idea\boot)
+2020-08-04 16:15:13.653  INFO 636 --- [restartedMain] com.soft.boot.BootApplication            : No active profile set, falling back to default profiles: default
+2020-08-04 16:15:13.680  INFO 636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-04 16:15:13.680  INFO 636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-04 16:15:14.446  INFO 636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-08-04 16:15:14.452  INFO 636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-04 16:15:14.452  INFO 636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 16:15:14.507  INFO 636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-04 16:15:14.507  INFO 636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 827 ms
+2020-08-04 16:15:14.888  INFO 636 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/'], []
+2020-08-04 16:15:14.888  INFO 636 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/noAuthenticate'], []
+2020-08-04 16:15:14.910  INFO 636 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@444ada30, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e951005, org.springframework.security.web.header.HeaderWriterFilter@70b94d1, org.springframework.security.web.authentication.logout.LogoutFilter@56f16709, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e3feb9f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@79ac87b7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@596ee6cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38dc6a2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4eaf1ecd, org.springframework.security.web.session.SessionManagementFilter@3f3f6b1d, org.springframework.security.web.access.ExceptionTranslationFilter@11c546e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@150bf2ce]
+2020-08-04 16:15:14.976  INFO 636 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 16:15:15.014  INFO 636 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-04 16:15:15.048  WARN 636 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-04 16:15:15.117  INFO 636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-04 16:15:15.141  INFO 636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-08-04 16:15:15.148  INFO 636 --- [restartedMain] com.soft.boot.BootApplication            : Started BootApplication in 1.755 seconds (JVM running for 2.254)
+2020-08-04 16:15:16.086  INFO 636 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 16:15:16.086  INFO 636 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-04 16:15:16.090  INFO 636 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-08-04 16:15:21.160  INFO 636 --- [http-nio-80-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-04 16:15:21.226  INFO 636 --- [http-nio-80-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-04 16:15:21.230 DEBUG 636 --- [http-nio-80-exec-3] c.s.b.m.SysUserDAO.selectByUsername      : ==>  Preparing: select USER_ID, USERNAME, `PASSWORD`, EMAIL, MOBILE, `STATUS`, CRATE_TIME, MODIFY_TIME, LASsys_LOGIN_TIME, SSEX, DESCRIPTION from sys_user where USERNAME = ?
+2020-08-04 16:15:21.241 DEBUG 636 --- [http-nio-80-exec-3] c.s.b.m.SysUserDAO.selectByUsername      : ==> Parameters: admin(String)
+2020-08-04 16:15:21.253 DEBUG 636 --- [http-nio-80-exec-3] c.s.b.m.SysUserDAO.selectByUsername      : <==      Total: 1
+2020-08-04 16:15:21.256 DEBUG 636 --- [http-nio-80-exec-3] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==>  Preparing: select r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME from sys_role r,sys_user users,sys_user_role ur where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=?
+2020-08-04 16:15:21.256 DEBUG 636 --- [http-nio-80-exec-3] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : ==> Parameters: admin(String)
+2020-08-04 16:15:21.257 DEBUG 636 --- [http-nio-80-exec-3] c.s.b.mapper.SysRoleDAO.findRolesOfUser  : <==      Total: 1
+2020-08-04 16:15:21.325 DEBUG 636 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 16:15:21.325 DEBUG 636 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /index(String)
+2020-08-04 16:15:21.326 DEBUG 636 --- [http-nio-80-exec-4] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 16:15:21.370 DEBUG 636 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 16:15:21.370 DEBUG 636 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /js/jquery-3.3.1.js(String)
+2020-08-04 16:15:21.371 DEBUG 636 --- [http-nio-80-exec-5] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 16:15:31.414 DEBUG 636 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 16:15:31.414 DEBUG 636 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /index(String)
+2020-08-04 16:15:31.415 DEBUG 636 --- [http-nio-80-exec-6] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 16:15:31.442 DEBUG 636 --- [http-nio-80-exec-7] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==>  Preparing: select RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME from sys_resource where URL = ?
+2020-08-04 16:15:31.442 DEBUG 636 --- [http-nio-80-exec-7] c.s.b.mapper.SysResourceDAO.selectByUrl  : ==> Parameters: /js/jquery-3.3.1.js(String)
+2020-08-04 16:15:31.443 DEBUG 636 --- [http-nio-80-exec-7] c.s.b.mapper.SysResourceDAO.selectByUrl  : <==      Total: 0
+2020-08-04 16:25:31.089  INFO 636 --- [http-nio-80-exec-9] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x020x000x000x000x010x000x000x0000x000x000x000xa7u0xd4g0xbe0xa10xab0xdbb70x180xd20xb30xa00x05#0xaf0x9a0xa10xdf0xa00xbd@_.0xdb0xbe0xb9f0x0fV0xe0h0xd00x1f)h0x1b0xd6^0x070x160xca0xf190xbb0xa0...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:418) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:260) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_91]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_91]
+

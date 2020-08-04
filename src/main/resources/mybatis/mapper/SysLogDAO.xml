@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soft.boot.mapper.SysLogDAO">
+  <resultMap id="BaseResultMap" type="com.soft.boot.domain.SysLog">
+    <id column="ID" jdbcType="BIGINT" property="ID" />
+    <result column="USERNAME" jdbcType="VARCHAR" property="USERNAME" />
+    <result column="OPERATION" jdbcType="VARCHAR" property="OPERATION" />
+    <result column="TIME" jdbcType="DECIMAL" property="TIME" />
+    <result column="METHOD" jdbcType="VARCHAR" property="METHOD" />
+    <result column="PARAMS" jdbcType="VARCHAR" property="PARAMS" />
+    <result column="IP" jdbcType="VARCHAR" property="IP" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="CREATE_TIME" />
+    <result column="location" jdbcType="VARCHAR" property="location" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID, USERNAME, `OPERATION`, `TIME`, `METHOD`, PARAMS, IP, CREATE_TIME, `location`
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_log
+    where ID = #{ID,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sys_log
+    where ID = #{ID,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="ID" keyProperty="ID" parameterType="com.soft.boot.domain.SysLog" useGeneratedKeys="true">
+    insert into sys_log (USERNAME, `OPERATION`, `TIME`, 
+      `METHOD`, PARAMS, IP, 
+      CREATE_TIME, `location`)
+    values (#{USERNAME,jdbcType=VARCHAR}, #{OPERATION,jdbcType=VARCHAR}, #{TIME,jdbcType=DECIMAL}, 
+      #{METHOD,jdbcType=VARCHAR}, #{PARAMS,jdbcType=VARCHAR}, #{IP,jdbcType=VARCHAR}, 
+      #{CREATE_TIME,jdbcType=TIMESTAMP}, #{location,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="ID" keyProperty="ID" parameterType="com.soft.boot.domain.SysLog" useGeneratedKeys="true">
+    insert into sys_log
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="USERNAME != null">
+        USERNAME,
+      </if>
+      <if test="OPERATION != null">
+        `OPERATION`,
+      </if>
+      <if test="TIME != null">
+        `TIME`,
+      </if>
+      <if test="METHOD != null">
+        `METHOD`,
+      </if>
+      <if test="PARAMS != null">
+        PARAMS,
+      </if>
+      <if test="IP != null">
+        IP,
+      </if>
+      <if test="CREATE_TIME != null">
+        CREATE_TIME,
+      </if>
+      <if test="location != null">
+        `location`,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="USERNAME != null">
+        #{USERNAME,jdbcType=VARCHAR},
+      </if>
+      <if test="OPERATION != null">
+        #{OPERATION,jdbcType=VARCHAR},
+      </if>
+      <if test="TIME != null">
+        #{TIME,jdbcType=DECIMAL},
+      </if>
+      <if test="METHOD != null">
+        #{METHOD,jdbcType=VARCHAR},
+      </if>
+      <if test="PARAMS != null">
+        #{PARAMS,jdbcType=VARCHAR},
+      </if>
+      <if test="IP != null">
+        #{IP,jdbcType=VARCHAR},
+      </if>
+      <if test="CREATE_TIME != null">
+        #{CREATE_TIME,jdbcType=TIMESTAMP},
+      </if>
+      <if test="location != null">
+        #{location,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.soft.boot.domain.SysLog">
+    update sys_log
+    <set>
+      <if test="USERNAME != null">
+        USERNAME = #{USERNAME,jdbcType=VARCHAR},
+      </if>
+      <if test="OPERATION != null">
+        `OPERATION` = #{OPERATION,jdbcType=VARCHAR},
+      </if>
+      <if test="TIME != null">
+        `TIME` = #{TIME,jdbcType=DECIMAL},
+      </if>
+      <if test="METHOD != null">
+        `METHOD` = #{METHOD,jdbcType=VARCHAR},
+      </if>
+      <if test="PARAMS != null">
+        PARAMS = #{PARAMS,jdbcType=VARCHAR},
+      </if>
+      <if test="IP != null">
+        IP = #{IP,jdbcType=VARCHAR},
+      </if>
+      <if test="CREATE_TIME != null">
+        CREATE_TIME = #{CREATE_TIME,jdbcType=TIMESTAMP},
+      </if>
+      <if test="location != null">
+        `location` = #{location,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID = #{ID,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.soft.boot.domain.SysLog">
+    update sys_log
+    set USERNAME = #{USERNAME,jdbcType=VARCHAR},
+      `OPERATION` = #{OPERATION,jdbcType=VARCHAR},
+      `TIME` = #{TIME,jdbcType=DECIMAL},
+      `METHOD` = #{METHOD,jdbcType=VARCHAR},
+      PARAMS = #{PARAMS,jdbcType=VARCHAR},
+      IP = #{IP,jdbcType=VARCHAR},
+      CREATE_TIME = #{CREATE_TIME,jdbcType=TIMESTAMP},
+      `location` = #{location,jdbcType=VARCHAR}
+    where ID = #{ID,jdbcType=BIGINT}
+  </update>
+</mapper>

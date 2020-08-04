@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soft.boot.mapper.SysResourceDAO">
+  <resultMap id="BaseResultMap" type="com.soft.boot.domain.SysResource">
+    <id column="RESOURCE_ID" jdbcType="BIGINT" property="RESOURCE_ID" />
+    <result column="URL" jdbcType="VARCHAR" property="URL" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="CREATE_TIME" />
+    <result column="MODIFY_TIME" jdbcType="TIMESTAMP" property="MODIFY_TIME" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    RESOURCE_ID, URL, CREATE_TIME, MODIFY_TIME
+  </sql>
+
+
+  <select id="selectByUrl" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from sys_resource
+    where URL = #{requestUrl,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from sys_resource
+    where RESOURCE_ID = #{RESOURCE_ID,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sys_resource
+    where RESOURCE_ID = #{RESOURCE_ID,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.soft.boot.domain.SysResource">
+    insert into sys_resource (RESOURCE_ID, URL, CREATE_TIME, 
+      MODIFY_TIME)
+    values (#{RESOURCE_ID,jdbcType=BIGINT}, #{URL,jdbcType=VARCHAR}, #{CREATE_TIME,jdbcType=TIMESTAMP}, 
+      #{MODIFY_TIME,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.soft.boot.domain.SysResource">
+    insert into sys_resource
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="RESOURCE_ID != null">
+        RESOURCE_ID,
+      </if>
+      <if test="URL != null">
+        URL,
+      </if>
+      <if test="CREATE_TIME != null">
+        CREATE_TIME,
+      </if>
+      <if test="MODIFY_TIME != null">
+        MODIFY_TIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="RESOURCE_ID != null">
+        #{RESOURCE_ID,jdbcType=BIGINT},
+      </if>
+      <if test="URL != null">
+        #{URL,jdbcType=VARCHAR},
+      </if>
+      <if test="CREATE_TIME != null">
+        #{CREATE_TIME,jdbcType=TIMESTAMP},
+      </if>
+      <if test="MODIFY_TIME != null">
+        #{MODIFY_TIME,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.soft.boot.domain.SysResource">
+    update sys_resource
+    <set>
+      <if test="URL != null">
+        URL = #{URL,jdbcType=VARCHAR},
+      </if>
+      <if test="CREATE_TIME != null">
+        CREATE_TIME = #{CREATE_TIME,jdbcType=TIMESTAMP},
+      </if>
+      <if test="MODIFY_TIME != null">
+        MODIFY_TIME = #{MODIFY_TIME,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where RESOURCE_ID = #{RESOURCE_ID,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.soft.boot.domain.SysResource">
+    update sys_resource
+    set URL = #{URL,jdbcType=VARCHAR},
+      CREATE_TIME = #{CREATE_TIME,jdbcType=TIMESTAMP},
+      MODIFY_TIME = #{MODIFY_TIME,jdbcType=TIMESTAMP}
+    where RESOURCE_ID = #{RESOURCE_ID,jdbcType=BIGINT}
+  </update>
+</mapper>

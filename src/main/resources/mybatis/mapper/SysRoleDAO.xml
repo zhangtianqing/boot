@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soft.boot.mapper.SysRoleDAO">
+  <resultMap id="BaseResultMap" type="com.soft.boot.domain.SysRole">
+    <id column="ROLE_ID" jdbcType="BIGINT" property="ROLE_ID" />
+    <result column="ROLE_NAME" jdbcType="VARCHAR" property="ROLE_NAME" />
+    <result column="REMARK" jdbcType="VARCHAR" property="REMARK" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="CREATE_TIME" />
+    <result column="MODIFY_TIME" jdbcType="TIMESTAMP" property="MODIFY_TIME" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    ROLE_ID, ROLE_NAME, REMARK, CREATE_TIME, MODIFY_TIME
+  </sql>
+  <sql id="ROLE_SELECT">
+    r.ROLE_ID, r.ROLE_NAME, r.REMARK, r.CREATE_TIME, r.MODIFY_TIME
+  </sql>
+
+  <select id="findRolesOfUser" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="ROLE_SELECT" />
+    from sys_role r,sys_user users,sys_user_role ur
+    where users.USER_ID = ur.USER_ID and r.ROLE_ID=ur.ROLE_ID and users.USERNAME=#{username,jdbcType=VARCHAR}
+  </select>
+
+  <select id="findRolesOfResource" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="ROLE_SELECT" />
+    from sys_role r,sys_resource resource,sys_role_resource rr
+    where rr.RESOURCE_ID=resource.RESOURCE_ID and r.ROLE_ID=rr.ROLE_ID and resource.RESOURCE_ID=#{resource,jdbcType=BIGINT}
+  </select>
+
+
+
+
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from sys_role
+    where ROLE_ID = #{ROLE_ID,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sys_role
+    where ROLE_ID = #{ROLE_ID,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.soft.boot.domain.SysRole">
+    insert into sys_role (ROLE_ID, ROLE_NAME, REMARK, 
+      CREATE_TIME, MODIFY_TIME)
+    values (#{ROLE_ID,jdbcType=BIGINT}, #{ROLE_NAME,jdbcType=VARCHAR}, #{REMARK,jdbcType=VARCHAR}, 
+      #{CREATE_TIME,jdbcType=TIMESTAMP}, #{MODIFY_TIME,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.soft.boot.domain.SysRole">
+    insert into sys_role
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="ROLE_ID != null">
+        ROLE_ID,
+      </if>
+      <if test="ROLE_NAME != null">
+        ROLE_NAME,
+      </if>
+      <if test="REMARK != null">
+        REMARK,
+      </if>
+      <if test="CREATE_TIME != null">
+        CREATE_TIME,
+      </if>
+      <if test="MODIFY_TIME != null">
+        MODIFY_TIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="ROLE_ID != null">
+        #{ROLE_ID,jdbcType=BIGINT},
+      </if>
+      <if test="ROLE_NAME != null">
+        #{ROLE_NAME,jdbcType=VARCHAR},
+      </if>
+      <if test="REMARK != null">
+        #{REMARK,jdbcType=VARCHAR},
+      </if>
+      <if test="CREATE_TIME != null">
+        #{CREATE_TIME,jdbcType=TIMESTAMP},
+      </if>
+      <if test="MODIFY_TIME != null">
+        #{MODIFY_TIME,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.soft.boot.domain.SysRole">
+    update sys_role
+    <set>
+      <if test="ROLE_NAME != null">
+        ROLE_NAME = #{ROLE_NAME,jdbcType=VARCHAR},
+      </if>
+      <if test="REMARK != null">
+        REMARK = #{REMARK,jdbcType=VARCHAR},
+      </if>
+      <if test="CREATE_TIME != null">
+        CREATE_TIME = #{CREATE_TIME,jdbcType=TIMESTAMP},
+      </if>
+      <if test="MODIFY_TIME != null">
+        MODIFY_TIME = #{MODIFY_TIME,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ROLE_ID = #{ROLE_ID,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.soft.boot.domain.SysRole">
+    update sys_role
+    set ROLE_NAME = #{ROLE_NAME,jdbcType=VARCHAR},
+      REMARK = #{REMARK,jdbcType=VARCHAR},
+      CREATE_TIME = #{CREATE_TIME,jdbcType=TIMESTAMP},
+      MODIFY_TIME = #{MODIFY_TIME,jdbcType=TIMESTAMP}
+    where ROLE_ID = #{ROLE_ID,jdbcType=BIGINT}
+  </update>
+</mapper>
